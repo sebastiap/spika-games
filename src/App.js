@@ -4,9 +4,9 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch  } from 'react-router-dom';
 
 //Componentes Generales
-import Header from "./components/layout/header"
-import Hero from './components/layout/hero';
-import Footer from "./components/layout/footer";
+import Layout from './components/common/ui/layout';
+import Home from './components/pages/Home';
+
 
 //Componentes Individuales
 import BlogDetails from './components/common/BlogDetail';
@@ -19,14 +19,10 @@ import NotFound from "./components/pages/notFound"
 function App() {
 
   return (
-    <div>
-      <Header />
-      {/* Todo lo que esta dentro del switch cambia segun la ruta
-      cada pieza de codiga cubierta por etiquetas route sera una ruta diferente */}
+    <Layout>
       <Switch>
         <Route exact path="/">
-        <Hero/>
-        <Hero/>
+        <Home/>
         </Route>
         <Route path="/top">
           <TopGames/>
@@ -41,8 +37,7 @@ function App() {
           <NotFound/>
         </Route>
       </Switch>
-      <Footer />
-    </div>
+    </Layout>
   );
 }
 export default App;

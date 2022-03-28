@@ -7,8 +7,18 @@
   min-width: 100%;
   min-height: 100%;
   /* Imagen de Fondo  */
+}
+
+
+.background1{
+  background-image: url("https://as1.ftcdn.net/v2/jpg/01/88/85/08/1000_F_188850892_Z41LHoKhAvTUox9XxfXd3xFOgCQesgyI.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background2{
   background-image: url("https://cdn.thewirecutter.com/wp-content/media/2021/07/boardgames-2048px-2233.jpg");
 }
+
 
 .proyectcardshero {
   display: inline-block;
