@@ -1,0 +1,46 @@
+.boardgamehero {
+  display: inline-block;
+  /* Con estos 2 no repite el fondo y cubre todo el div estirandose */
+  background-repeat: no-repeat;
+  background-size:cover;
+  /* Tamaños minimos */
+  min-width: 100%;
+  min-height: 100%;
+  /* Imagen de Fondo  */
+  background-image: url("https://cdn.thewirecutter.com/wp-content/media/2021/07/boardgames-2048px-2233.jpg");
+}
+
+.proyectcardshero {
+  display: inline-block;
+  /* Con estos 2 no repite el fondo y cubre todo el div estirandose */
+  background-repeat: no-repeat;
+  background-size:cover;
+  /* Tamaños minimos */
+  min-width: 100%;
+  min-height: 100%;
+  /* Imagen de Fondo  */
+  background-image: url("https://s35691.pcdn.co/wp-content/uploads/2022/01/playing-cards-poker-cards-in-the-hand-of-a-young-man-picture-id1131822944.jpg");
+}
+
+.herotitle {
+    font-size: 3em;
+    color: #9FCC2E;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+
+}
+
+.herocontent {
+
+  font-weight: bold;
+  font-size: 2em;
+  color: #5a6650;
+  text-align: center;
+  text-shadow: 1px 2px 3px black;
+}
+
+.herowrapper {
+display: flex;
+justify-content: space-around;
+align-items: flex-end;
+}
