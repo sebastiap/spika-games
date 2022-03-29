@@ -9,7 +9,7 @@ import Home from './components/pages/Home';
 
 
 //Componentes Individuales
-import BlogDetails from './components/common/BlogDetail';
+import BlogDetails from './components/common/blog/BlogDetail';
 
 //Paginas Virtuales
 import BlogPage from './components/pages/blogs';

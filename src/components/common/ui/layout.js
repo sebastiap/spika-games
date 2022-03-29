@@ -3,7 +3,7 @@ import Header from '../../layout/header';
 import Footer from '../../layout/footer';
 
 function Layout(props) {
-  return <div className={classes.card}>
+  return <div>
   <Header/>
   {props.children}
   <Footer/>

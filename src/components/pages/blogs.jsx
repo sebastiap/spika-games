@@ -1,5 +1,7 @@
 import React from "react";
-import BlogList from "../common/blogList";
+import Hero from "../layout/hero";
+import BlogForm from "../common/blog/BlogForm"
+import ContentWrapper from "../common/ui/contentWrapper";
 // import useFetch2 from "../common/useFetch2";
 
 function BlogPage() {
@@ -7,12 +9,13 @@ function BlogPage() {
   // console.log(data.games)
   return (
 
-    <div>
-      {/* { error && <div>{ error }</div> }
-      { isPending && <div>Trayendo Juegos...</div> } */}
-      <textarea name="textarea" rows="10" cols="50">Write something here</textarea>
-      {<BlogList/>}
+    <div >
+      <Hero secciones={[]} title="Publica un nuevo articulo!" content="Tu aporte es bienvenido" background="background1" />
+      <BlogForm/>
+      {/* <textarea name="textarea" rows="10" cols="50">Write something here</textarea>
+      {<BlogList/>} */}
     </div>
   );
 }
 export default BlogPage;
+
