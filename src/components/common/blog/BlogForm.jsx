@@ -1,11 +1,30 @@
 import Card from '../ui/contentWrapper';
 import classes from './BlogForm.module.css';
 
+import {useRef} from 'react';
+
 function NewBlogForm() {
+const titleInputRef = useRef();
+const titleImgRef = useRef();
+const titleAdressRef = useRef();
+const titleDescRef = useRef();
+
   function submitHandler(event) {
     event.preventDefault();
 
-    
+    const title = titleInputRef.current.value;
+    const img = titleImgRef.current.value;
+    const Address = titleAdressRef.current.value;
+    const description = titleDescRef.current.value;
+
+    const postObject = {
+      title:title,
+      img:img,
+      Address:Address,
+      description:description
+    };
+
+    console.log(postObject)
   }
 
   return (
@@ -13,19 +32,19 @@ function NewBlogForm() {
       <form className={classes.form} onSubmit={submitHandler}>
         <div className={classes.control}>
           <label htmlFor='title'>Titulo</label>
-          <input type='text' required id='title' />
+          <input type='text' required id='title' ref={titleInputRef} />
         </div>
         <div className={classes.control}>
           <label htmlFor='image'>Imagen del Articulo</label>
-          <input type='url' required id='image' />
+          <input type='url' required id='image' ref={titleImgRef} />
         </div>
         <div className={classes.control}>
           <label htmlFor='address'>Address</label>
-          <input type='text' required id='address' />
+          <input type='text' required id='address' ref={titleAdressRef} />
         </div>
         <div className={classes.control}>
           <label htmlFor='description'>Descripcion</label>
-          <textarea id='description' required rows='5'></textarea>
+          <textarea id='description' required rows='5' ref={titleDescRef}></textarea>
         </div>
         <div className={classes.actions}>
           <button>Agregar Articulo</button>
