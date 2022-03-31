@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const useFetch = (url) => {
+const useFetch2 = (url) => {
   const [data, setData] = useState(null);
   const [isPending, setIsPending] = useState(true);
   const [error, setError] = useState(null);
@@ -9,6 +9,9 @@ const useFetch = (url) => {
     const abortCont = new AbortController();
 
     setTimeout(() => {
+
+      // No se puede hacer un async aca 
+      // Lo manejamos con el metodo then
       fetch(url, { signal: abortCont.signal })
       .then(res => {
         if (!res.ok) { // error coming back from server
@@ -16,6 +19,7 @@ const useFetch = (url) => {
         } 
         return res.json();
       })
+      // esta respuesta res.json es otra promesa, por eso puedo hacer otro then para analizar los datos
       .then(data => {
         setIsPending(false);
         setData(data);
@@ -39,4 +43,4 @@ const useFetch = (url) => {
   return { data, isPending, error };
 }
  
-export default useFetch;
+export default useFetch2;

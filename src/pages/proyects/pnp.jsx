@@ -1,18 +1,16 @@
-import { div } from "prelude-ls"
 import React from "react"
 import { Link } from "react-router-dom"
 
-const NotFound = () =>
+const Pnp = () =>
 {
     return(
-        <div className="hero-title">
+        <div className="notfound">
             <h2>Pagina no encontrada</h2>
             <p> Esa pagina no puede encontrarse</p>
-            <img src="https://http.cat/404"/>
+            <img src="https://http.cat/404" alt="Hidden Cat"/>
             <p> <Link to="/">Volver al home </Link></p>
-            <p> .</p>
         </div>
     );
 };
 
-export default NotFound;
+export default Pnp;

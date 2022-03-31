@@ -1,20 +1,24 @@
 import './App.css';
 
 import React from "react";
-import { BrowserRouter as Router, Route, Switch  } from 'react-router-dom';
+import {  Route, Switch  } from 'react-router-dom';
 
 //Componentes Generales
 import Layout from './components/common/ui/layout';
-import Home from './components/pages/Home';
+import Home from './pages/Home'
 
 
 //Componentes Individuales
 import BlogDetails from './components/common/blog/BlogDetail';
 
 //Paginas Virtuales
-import BlogPage from './components/pages/blogs';
-import TopGames from './components/pages/top';
-import NotFound from "./components/pages/notFound"
+import BlogPage from './pages/blogs';
+import TopGames from './pages/top';
+import NotFound from "./pages/notFound"
+
+import Clasicos from './pages/proyects/clasicos';
+import Pnp from './pages/proyects/pnp';
+import Pcards from './pages/proyects/proyectCards';
 
 function App() {
 
@@ -32,6 +36,15 @@ function App() {
         </Route>
         <Route path="/blogs/:id">
           <BlogDetails/>
+        </Route>
+        <Route path="/cards">
+          <Pcards/>
+        </Route>
+        <Route path="/pnp">
+          <Pnp/>
+        </Route>
+        <Route path="/clasicos">
+          <Clasicos/>
         </Route>
         <Route path="*">
           <NotFound/>

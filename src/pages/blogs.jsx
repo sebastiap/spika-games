@@ -1,7 +1,7 @@
 import React from "react";
-import Hero from "../layout/hero";
-import BlogForm from "../common/blog/BlogForm"
-import ContentWrapper from "../common/ui/contentWrapper";
+import Hero from '../components/layout/hero'
+import BlogForm from "../components/common/blog/BlogForm"
+import ContentWrapper from "../components/common/ui/contentWrapper";
 // import useFetch2 from "../common/useFetch2";
 
 function BlogPage() {
