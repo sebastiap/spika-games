@@ -3,7 +3,7 @@ import classes from './BlogForm.module.css';
 
 import {useRef} from 'react';
 
-function NewBlogForm() {
+function NewBlogForm(props) {
 const titleInputRef = useRef();
 const titleImgRef = useRef();
 const titleAdressRef = useRef();
@@ -24,7 +24,10 @@ const titleDescRef = useRef();
       description:description
     };
 
-    console.log(postObject)
+    // console.log(postObject)
+
+    // Lo defino en la pagina blogs
+    props.onAddNewLog(postObject)
   }
 
   return (

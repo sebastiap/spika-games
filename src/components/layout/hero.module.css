@@ -13,7 +13,7 @@
 
 
 .background1{
-  background-image: url("https://as1.ftcdn.net/v2/jpg/01/88/85/08/1000_F_188850892_Z41LHoKhAvTUox9XxfXd3xFOgCQesgyI.jpg");
+  background-image: url("https://iamachild.files.wordpress.com/2014/04/thats-all-folks.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -31,6 +31,7 @@
   /* Tamaños minimos */
   min-width: 100%;
   min-height: 100%;
+  height: 30em;
   /* Imagen de Fondo  */
   background-image: url("https://s35691.pcdn.co/wp-content/uploads/2022/01/playing-cards-poker-cards-in-the-hand-of-a-young-man-picture-id1131822944.jpg");
 }

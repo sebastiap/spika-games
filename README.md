@@ -9,6 +9,7 @@
 * Routes
 
 * Fetch API
+* Firebase Database
 
 * Componentes Wrappers(uso de propiedad especial children)
 * Componentes Reutilizables(Uso de props)
