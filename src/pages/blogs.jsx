@@ -1,12 +1,16 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import Hero from '../components/layout/hero'
 import BlogForm from "../components/common/blog/BlogForm"
 import ContentWrapper from "../components/common/ui/contentWrapper";
 // import useFetch2 from "../common/useFetch2";
 
 function BlogPage() {
-
+  const history = useHistory();
   const AddnewLog = (newPostData) => {
+
+    // Utilizo el Hook useHistory para navegar el virtual DOM.
+
     //Funcion estandar de Javascript
     //El primer parametro de Fetch es la URL donde hacer el POST
     // La primera parte , https://spika-games-default-rtdb.firebaseio.com/ , la saque de Firebase , de la base recien creada
@@ -21,7 +25,13 @@ function BlogPage() {
     } // en body paso los datos en formato JSON
     }
     // Puedo agregar cacheo de errores
-    )
+
+    //Agrego then para ejecutar accions posteriores a la respuesta del fetch
+    ).then(()=>{
+    //utilizo replace en lugar de push, para ir a una nueva pagina y que no este la opcion de volver atras
+    // a replace le paso como parametro una ruta, no permite usar el navegador para volver para atras
+    history.replace('/');
+  })
   }
 
 
