@@ -17,3 +17,23 @@
 * Estructura de directorios
 
 
+## Problemas Resueltos - Github Pages
+
+### Ejecutar pagina en Github Pages
+Seguir las instrucciones de https://github.com/gitname/react-gh-pages
+Ejecutar el siguiente comando para deployar:
+~~~
+npm run deploy
+~~~
+
+### TypeError: MiniCssExtractPlugin is not a constructor
+Originalmente mi repositorio remoto se llamaba github, tuve que agregar una referencia con el nombre origin
+~~~
+npm i -D --save-exact mini-css-extract-plugin@2.4.5
+~~~
+
+### Failed to get remote.origin.url 
+Originalmente mi repositorio remoto se llamaba github, tuve que agregar una referencia con el nombre origin
+~~~
+git remote add origin https://github.com/sebastiap/spika-games.git
+~~~
