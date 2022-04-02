@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/spika-games/static/css/main.a6aea7dc.css",
+    "main.js": "/spika-games/static/js/main.e3c874d1.js",
+    "index.html": "/spika-games/index.html",
+    "main.a6aea7dc.css.map": "/spika-games/static/css/main.a6aea7dc.css.map",
+    "main.e3c874d1.js.map": "/spika-games/static/js/main.e3c874d1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6aea7dc.css",
+    "static/js/main.e3c874d1.js"
+  ]
+}
