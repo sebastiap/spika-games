@@ -6,7 +6,7 @@ import {useRef} from 'react';
 function NewBlogForm(props) {
 const titleInputRef = useRef();
 const titleImgRef = useRef();
-const titleAdressRef = useRef();
+const titleLinkRef = useRef();
 const titleDescRef = useRef();
 
   function submitHandler(event) {
@@ -14,13 +14,13 @@ const titleDescRef = useRef();
 
     const title = titleInputRef.current.value;
     const img = titleImgRef.current.value;
-    const Address = titleAdressRef.current.value;
+    const link = "blogs/"+ titleLinkRef.current.value;
     const description = titleDescRef.current.value;
 
     const postObject = {
       title:title,
       img:img,
-      Address:Address,
+      link:link,
       description:description
     };
 
@@ -42,8 +42,8 @@ const titleDescRef = useRef();
           <input type='url' required id='image' ref={titleImgRef} />
         </div>
         <div className={classes.control}>
-          <label htmlFor='address'>Address</label>
-          <input type='text' required id='address' ref={titleAdressRef} />
+          <label htmlFor='link'>Link</label>
+          <input type='text' required id='link' ref={titleLinkRef} />
         </div>
         <div className={classes.control}>
           <label htmlFor='description'>Descripcion</label>

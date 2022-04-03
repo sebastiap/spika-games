@@ -19,6 +19,7 @@ import NotFound from "./pages/notFound"
 import Clasicos from './pages/proyects/clasicos';
 import Pnp from './pages/proyects/pnp';
 import Pcards from './pages/proyects/proyectCards';
+import NewBlog from './pages/newBlog';
 
 function App() {
 
@@ -33,6 +34,9 @@ function App() {
         </Route>
         <Route exact path="/spika-games/blog">
           <BlogPage/>
+        </Route>
+        <Route exact path="/spika-games/newBlog">
+         <NewBlog/>
         </Route>
         <Route path="/spika-games/blogs/:id">
           <BlogDetails/>

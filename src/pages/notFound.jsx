@@ -8,7 +8,7 @@ const NotFound = () =>
             <h2>Pagina no encontrada</h2>
             <p> Esa pagina no puede encontrarse</p>
             <img src="https://http.cat/404" alt="Hidden Cat"/>
-            <p> <Link to="/">Volver al home </Link></p>
+            <p> <Link to="/spika-games/">Volver al home </Link></p>
         </div>
     );
 };

@@ -8,7 +8,7 @@ function Header() {
     <header className={headerClasses.header}>
     <div>
     <Link to="/">
-    <img width="200" height="70" srcSet="https://github.com/sebastiap/spika-games/blob/gh-pages/img/LogoSpikagames.png?raw=true" alt="TORI games" sizes="(max-width: 200px) 100vw, 200px"></img>
+    <img width="200" height="70" srcSet="https://github.com/sebastiap/spika-games/blob/gh-pages/img/LogoSpikagames.png?raw=true" alt="Spika games" sizes="(max-width: 200px) 100vw, 200px"></img>
     </Link>
     </div>
     <div>  
@@ -16,6 +16,7 @@ function Header() {
       <li><Link to="/spika-games/"> Home</Link></li>
       <li><Link to="/spika-games/top"> Top Games</Link></li>
       <li><Link to="/spika-games/blog"> Blogs </Link></li>
+      <li><Link to="/spika-games/newBlog"> New Blog </Link></li>
       <li><Link to="/spika-games/other"> Misc</Link></li>
     </ul>
       
