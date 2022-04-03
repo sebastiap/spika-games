@@ -8,7 +8,7 @@ import heroClass from './hero.module.css';
 function Hero(props) {
   var bg = heroClass.background1;
   //Reemplazar por stylos por props
-  if (props.background !="background1" ){
+  if (props.background !=="background1" ){
     bg = heroClass.background2;
   }
   
