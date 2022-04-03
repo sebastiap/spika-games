@@ -25,25 +25,25 @@ function App() {
   return (
     <Layout>
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/spika-games/">
         <Home/>
         </Route>
-        <Route path="/top">
+        <Route path="/spika-games/top">
           <TopGames/>
         </Route>
-        <Route exact path="/blog">
+        <Route exact path="/spika-games/blog">
           <BlogPage/>
         </Route>
-        <Route path="/blogs/:id">
+        <Route path="/spika-games/blogs/:id">
           <BlogDetails/>
         </Route>
-        <Route path="/cards">
+        <Route path="/spika-games/cards">
           <Pcards/>
         </Route>
-        <Route path="/pnp">
+        <Route path="/spika-games/pnp">
           <Pnp/>
         </Route>
-        <Route path="/clasicos">
+        <Route path="/spika-games/clasicos">
           <Clasicos/>
         </Route>
         <Route path="*">

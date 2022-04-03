@@ -17,7 +17,7 @@ function Home() {
 
     <div>
         {/* <ContentWrapper> */}
-        {/* <Hero secciones={[]} title="Juegos Clasicos de ayer y hoy presenta..." content="Tu puerta de entrada a los juegos de Mesa" background="background1" /> */}
+        <Hero secciones={[]} title="Juegos Clasicos de ayer y hoy presenta..." content="Tu puerta de entrada a los juegos de Mesa" background="background1" />
         <Hero secciones={JsonSecciones} title="Proyectos Activos" content="Visita nuestros proyectos activos:" background="background2"/>
         {/* </ContentWrapper> */}
     </div>
