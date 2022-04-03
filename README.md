@@ -1,10 +1,11 @@
-# Practica con Sitio de Juegos - Spika Games
+# Practica con Sitio de Juegos - Spika Games 🧩
 
 
 ## Conceptos
 
 * Hooks
 ** useEffect, useState, useRef
+** useHistory (Hook de router-dom)
 ** Custom Hooks
 * Routes
 
@@ -16,6 +17,8 @@
 * Componentes separados por funcionalidad
 * Estructura de directorios
 
+## Problemas Resueltos - General
+### 
 
 ## Problemas Resueltos - Github Pages
 
@@ -37,3 +40,5 @@ Originalmente mi repositorio remoto se llamaba github, tuve que agregar una refe
 ~~~
 git remote add origin https://github.com/sebastiap/spika-games.git
 ~~~
+
+### Imagenes no encontradas
