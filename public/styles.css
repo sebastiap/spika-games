@@ -106,3 +106,23 @@
     align-items: center;
 
 }
+
+.blogs {
+  font-size: 3em;
+  color: #9FCC2E;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+  background-color:darkcyan;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  box-sizing:content-box;
+
+}
+
+.blogs .example {
+  display: inline-block;
+  width: 50%;
+}

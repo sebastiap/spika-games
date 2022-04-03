@@ -13,11 +13,11 @@ function Hero(props) {
   }
   
   return (
-    <div className={heroClass.boardgamehero, bg}>
+    <div className={heroClass.boardgamehero , bg}>
     <h1 className={heroClass.herotitle}>{props.title} </h1>
     <p className={heroClass.herocontent}> {props.content} </p>
       <div className={heroClass.herowrapper}>
-      {props.secciones.map(seccion => (<Link to={seccion.link}><Section key={seccion.id} name={seccion.name} img={seccion.img}  content={seccion.content}/></Link>))}
+      {props.secciones.map(seccion => (<Link to={seccion.link}><Section key={seccion.id} name={seccion.title} img={seccion.img}  content={seccion.description}/></Link>))}
       </div>
     </div>
   );
