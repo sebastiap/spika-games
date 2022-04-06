@@ -49,7 +49,7 @@ useEffect(
 // Si dejo el array vacio, correra una sola vez
 // si no completo el segundo parametro se va a correr siempre que se cargue este componente . No seria diferente a correr el codigo en el componente
 // Si dentro del array pongo el nombre de una variable, verificara cambios en la variable para volver a ejecutar
-//solo deberia usarlo si tengo valores externos, no es el caso. 
+// solo deberia usarlo si tengo valores externos, no es el caso. 
 // Si por ejemplo sacaramos un dato de props o una url si deberia indicar esta dependencia
   ,[])
   
