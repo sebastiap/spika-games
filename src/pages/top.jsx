@@ -10,7 +10,7 @@ function TopGames() {
 
     <div>
       { error && <div>{ error }</div> }
-      { isPending && <div className="notfound"><Ball size={72} color="#81ecec"/> ...Trayendo Juegos...<Ball size={72} color="#81ecec"/></div> }
+      { isPending && <div className="notfound"><Ball size={72} color="#81ecec"/> <strong>Trayendo Juegos</strong><Ball size={72} color="#81ecec"/></div> }
       { data && <CardList games={data.games} /> }
     </div>
      );

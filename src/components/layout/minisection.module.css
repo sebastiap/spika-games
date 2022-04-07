@@ -1,0 +1,90 @@
+.background {
+  /* Tamaños minimos */
+  min-width: 100%;
+  min-height: 10em;
+  width: auto;
+  /* Imagen de Fondo  */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: antiquewhite;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.servcontent {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+}
+
+.background .title{
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #5a6650;
+  transform: translateX(-50%);
+}
+/* 
+PRUSIAN:"002642",
+CLARET:"840032",
+EBONY:"5a6650",
+YELGREEN:"9FCC2E",
+RICH:"02040f", */
+
+section .title::after{
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  font-size: 20px;
+  color: #50a3a2;
+  padding: 0 5px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+
+.card{
+  width: calc(33% - 20px);
+  background: #9FCC2E;
+  text-align: center;
+  border-radius: 6px;
+  padding: 50px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.card:hover{
+  background: #50a3a2;
+}
+.card .box{
+  transition: all 0.3s ease;
+}
+.card:hover .box{
+  transform: scale(1.05);
+}
+.card i{
+  font-size: 50px;
+  color: #50a3a2;
+  transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i{
+  color: #fff;
+}
+.card .text{
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}

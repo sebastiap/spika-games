@@ -1,6 +1,7 @@
 * {
 
     box-sizing: border-box;
+    margin: 0;
   }
 
   a {
@@ -104,6 +105,7 @@
     background-color:darkcyan;
     justify-content: center;
     align-items: center;
+    margin: 0;
 
 }
 

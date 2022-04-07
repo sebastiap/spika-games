@@ -17,6 +17,12 @@
 * Componentes separados por funcionalidad
 * Estructura de directorios
 
+## Librerias
+* font-Awesome
+Para iconos que se ven muy bien.
+* React-loading-io
+Para los Spinners.
+
 ## Problemas Resueltos - General 🐛🦗🐞
 ### 
 

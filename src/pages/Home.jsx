@@ -1,5 +1,7 @@
 import React from "react";
 import Hero from "../components/layout/hero"
+import MiniSection from "../components/layout/minisection";
+
 // import ContentWrapper from "../common/ui/contentWrapper";
 
 const JsonSecciones = [
@@ -19,6 +21,7 @@ function Home() {
         {/* <ContentWrapper> */}
         <Hero secciones={[]} title="Juegos Clasicos de ayer y hoy presenta..." content="Tu puerta de entrada a los juegos de Mesa" background="background1" />
         <Hero secciones={JsonSecciones} title="Proyectos Activos" content="Visita nuestros proyectos activos:" background="background2"/>
+        <MiniSection/>
         {/* </ContentWrapper> */}
     </div>
   );
