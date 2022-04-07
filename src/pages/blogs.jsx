@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from "react";
 import { useHistory } from "react-router-dom";
 import Hero from '../components/layout/hero'
-import BlogForm from "../components/common/blog/BlogForm"
+import {Eclipse} from "react-loading-io";
 
 function BlogPage() {
   const history = useHistory();
@@ -57,6 +57,7 @@ useEffect(
   // no puedo usar la funcion del componente React de este modo (poniendo async) ya que los componentes de React tienen que ser Sincronicos
   if (isloading) {
     return <div>Loading...
+    <Eclipse/>
     <img   src="https://github.com/sebastiap/spika-games/blob/gh-pages/img/BeanEater.svg"alt="Comecocos2" /> 
     </div>
 }
