@@ -1,0 +1,28 @@
+.section {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  min-height: 30em;
+  width: 20em;
+  margin: 16px;
+  float: left;
+  text-align: center;
+}
+.section h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.section p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.sectioncircleimg {
+  border-radius: 70%;
+  border: 7px solid #fff;
+  width: 70%;
+  height: 10em;
+}

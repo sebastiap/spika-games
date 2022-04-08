@@ -56,9 +56,9 @@ useEffect(
   // Esto termina en una funcion aparte, porque como son promesas necesito hacer un pedido asincrono.
   // no puedo usar la funcion del componente React de este modo (poniendo async) ya que los componentes de React tienen que ser Sincronicos
   if (isloading) {
-    return <div>Loading...
+    return <div className="centrado">
     <Eclipse/>
-    <img   src="https://github.com/sebastiap/spika-games/blob/gh-pages/img/BeanEater.svg"alt="Comecocos2" /> 
+    <img src="https://github.com/sebastiap/spika-games/blob/gh-pages/img/BeanEater.svg?raw=true" alt="Comecocos2"></img>
     </div>
 }
 

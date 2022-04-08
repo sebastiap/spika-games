@@ -17,6 +17,7 @@ function MiniSection(props) {
       <section className={heroClass.services} id="services">
         <div className={heroClass.maxwidth}>
             <h2 className={heroClass.title}>Nuestro Compromiso</h2>
+            <h3 className={heroClass.subtitle}>Los juegos publicados son :</h3>
             <div className={heroClass.servcontent} >
                 <div className={heroClass.card}>
                     <div className={heroClass.box}>

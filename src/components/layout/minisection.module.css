@@ -14,10 +14,12 @@
 }
 
 .servcontent {
+  margin-top: 1em;
 display: flex;
 flex-wrap: wrap;
 align-items: center;
-justify-content: space-between;
+justify-content: space-around;
+align-items: flex-start;
 }
 
 .background .title{
@@ -25,7 +27,7 @@ justify-content: space-between;
   text-align: center;
   font-size: 40px;
   font-weight: 500;
-  margin-bottom: 60px;
+  margin-bottom: 0.5em;
   padding-bottom: 20px;
   font-family: 'Ubuntu', sans-serif;
 }
@@ -38,6 +40,15 @@ section .title::before{
   height: 3px;
   background: #5a6650;
   transform: translateX(-50%);
+}
+
+.background .subtitle{
+  position: relative;
+  text-align: center;
+  color: #5a6650;
+  margin: 0;
+  font-size: 1.5em;
+  font-family: 'Ubuntu', sans-serif;
 }
 /* 
 PRUSIAN:"002642",
@@ -65,23 +76,25 @@ section .title::after{
   padding: 50px 25px;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-bottom: 1em;
 }
 .card:hover{
   background: #50a3a2;
+  color: #fff;
 }
+.card .box{
+  transition: all 0.3s ease;
+}
+
 .card .box{
   transition: all 0.3s ease;
 }
 .card:hover .box{
   transform: scale(1.05);
 }
-.card i{
-  font-size: 50px;
-  color: #50a3a2;
-  transition: color 0.3s ease;
-}
-.services .serv-content .card:hover i{
-  color: #fff;
+
+.services .serv-content .card:hover {
+  
 }
 .card .text{
   font-size: 25px;
