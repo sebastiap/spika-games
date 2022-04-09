@@ -20,6 +20,7 @@ import Clasicos from './pages/proyects/clasicos';
 import Pnp from './pages/proyects/pnp';
 import Pcards from './pages/proyects/proyectCards';
 import NewBlog from './pages/newBlog';
+import MyFavorites from './pages/MyFavorites';
 
 function App() {
 
@@ -49,6 +50,9 @@ function App() {
         </Route>
         <Route path="/spika-games/clasicos">
           <Clasicos/>
+        </Route>
+        <Route path="/spika-games/favoritos">
+          <MyFavorites/>
         </Route>
         <Route path="*">
           <NotFound/>

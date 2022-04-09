@@ -1,9 +1,12 @@
-import React from "react";
+import {useContext} from "react";
 import { Link } from "react-router-dom";
 
 import headerClasses from './header.module.css'
+import FavoritesContext from "../../store/favorites-context";
 
 function Header() {
+
+  const favs = useContext(FavoritesContext);
   return (
     <header className={headerClasses.header}>
     <div>
@@ -17,7 +20,7 @@ function Header() {
       <li><Link to="/spika-games/top"> Top Games</Link></li>
       <li><Link to="/spika-games/blog"> Blogs </Link></li>
       <li><Link to="/spika-games/newBlog"> New Blog </Link></li>
-      <li><Link to="/spika-games/other"> Misc</Link></li>
+      <li><Link to="/spika-games/favoritos"> Favoritos <span>({favs.total})</span></Link></li>
     </ul>
       
       

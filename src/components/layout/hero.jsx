@@ -18,7 +18,7 @@ function Hero(props) {
     <h1 className={heroClass.herotitle}>{props.title} </h1>
     <p className={heroClass.herocontent}> {props.content} </p>
       <div className={heroClass.herowrapper}>
-      {props.secciones.map(seccion => (<div ><Section key={seccion.id} name={seccion.title} img={seccion.img}  content={seccion.description}/> </div>))}
+      {props.secciones.map(seccion => (<div ><Section id={seccion.id} key={seccion.id} name={seccion.title} img={seccion.img}  content={seccion.description} link={seccion.link} /> </div>))}
       {/* {props.secciones.map(seccion => (<Link to={seccion.link}><Section key={seccion.id} name={seccion.title} img={seccion.img}  content={seccion.description}/> </Link>))} */}
       </div>
     </div>
