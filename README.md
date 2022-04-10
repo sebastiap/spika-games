@@ -17,19 +17,32 @@
 ** useContext
 ** createContext
 
+* localStorage
+
 * Componentes Wrappers(uso de propiedad especial children)
 * Componentes Reutilizables(Uso de props)
 * Componentes separados por funcionalidad
 * Estructura de directorios
 
+
+* Pendientes
+- [x] localStorage
+- [ ]  Botones para Secciones
+- [ ]  Secciones de cada cosa
+- [ ]  formato lindo para las secciones
+- [ ]  CSS en general 
+
 ## Librerias
 * font-Awesome
 Para iconos que se ven muy bien.
+
 * React-loading-io
 Para los Spinners.
 
 ## Problemas Resueltos - General 🐛🦗🐞
-### 
+### localStorage  
+Para evitar que se loguee varias verces, termine ubicandolo en el archivo de contexto. Pense por un momento en aplicarlo en app.js o en la parte de secciones pero demostro ser 
+problematico y termine optando por la solucion mas feliz.
 
 ## Problemas Resueltos - Github Pages 🐛
 

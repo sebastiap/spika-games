@@ -1,5 +1,4 @@
 import React from "react";
-import Hero from "../components/layout/hero"
 import { useContext } from "react";
 import FavoritesContext from "../store/favorites-context";
 import Section from "../components/section";
@@ -13,18 +12,20 @@ function MyFavorites() {
   let content ;
 
   if (myFavs.total === 0) {
-    content = "You have no Favorites";
+    content = <div className="notfound">
+    <h1>"Todavia no agregaste nada a Favoritos!"</h1>
+    <p> Revisa nuestros articulos para ver cuales son tus preferidos!</p>
+    </div>
   }
   else {
-    content = 
-    <Hero secciones={myFavs.favorites} title="Mis Favoritos" content="Estos son los articulos que te encantan:" background="background2"/>
+    content = myFavs.favorites.map(seccion => (<div ><Section id={seccion.id} key={seccion.id} name={seccion.name} img={seccion.img}  content={seccion.content}/> </div>))
   }
 
 
   return (
 
-    <div>
-    {myFavs.favorites.map(seccion => (<div ><Section id={seccion.id} key={seccion.id} name={seccion.name} img={seccion.img}  content={seccion.content}/> </div>))}
+    <div >
+     {content}
     </div>
   );
 }
