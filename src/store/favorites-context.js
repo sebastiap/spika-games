@@ -1,4 +1,4 @@
-import { createContext,useState } from "react";
+import { createContext,useState,useEffect } from "react";
 
 const FavoritesContext = createContext({
     favorites:[],
@@ -11,6 +11,28 @@ const FavoritesContext = createContext({
 
 export function FavoritesContextProvider(props)  {
 const [userFavorites,setUserFavorites] = useState([])
+const [items, setItems] = useState([]);
+
+// Carga Inicial de localStorage
+useEffect(() => {
+  try {
+    const items = JSON.parse(localStorage.getItem('items'));
+    console.log("ITEMS" + items)
+    if (items) {
+      setItems(items);
+      setUserFavorites(items);
+    }
+  }
+  catch (err) {
+    console.log(err);
+    console.log(items)
+  }
+  }, []);
+
+  //monitoreo de cambios en storage
+  useEffect(() => {
+    localStorage.setItem('items', JSON.stringify(items));
+  }, [items]);
 
 function addFavoriteHandler(favoriteItem) {
     // Como la actualizacion de useState no es automatica, necesito pasarle una funcion y no un valor para asegurar que 
@@ -19,6 +41,9 @@ function addFavoriteHandler(favoriteItem) {
     setUserFavorites((prevUserfavorites) => {
         return prevUserfavorites.concat(favoriteItem)
     })
+    setItems((prevLocalStorage) => {
+        return prevLocalStorage.concat(favoriteItem)
+    })
 }
 function removeFavoriteHandler(favoriteId) {
     //Idem, para asegurar el estado actual del state, le paso una funcion.
@@ -26,6 +51,10 @@ function removeFavoriteHandler(favoriteId) {
     return prevUserfavorites.filter(Item => Item.id !== favoriteId)
         }
     )
+    // Lo aplico tambien al localStorage
+    setItems((prevLocalStorage) => {
+        return prevLocalStorage.filter(Item => Item.id !== favoriteId)
+    })
 }
 function itemIsFavoriteHandler(favoriteId) {
     return userFavorites.some(Item => Item.id === favoriteId);
