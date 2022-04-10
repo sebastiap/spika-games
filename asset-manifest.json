@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/spika-games/static/css/main.aa085bcd.css",
-    "main.js": "/spika-games/static/js/main.ece975f3.js",
+    "main.css": "/spika-games/static/css/main.e320a104.css",
+    "main.js": "/spika-games/static/js/main.234e66fc.js",
     "index.html": "/spika-games/index.html",
-    "main.aa085bcd.css.map": "/spika-games/static/css/main.aa085bcd.css.map",
-    "main.ece975f3.js.map": "/spika-games/static/js/main.ece975f3.js.map"
+    "main.e320a104.css.map": "/spika-games/static/css/main.e320a104.css.map",
+    "main.234e66fc.js.map": "/spika-games/static/js/main.234e66fc.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa085bcd.css",
-    "static/js/main.ece975f3.js"
+    "static/css/main.e320a104.css",
+    "static/js/main.234e66fc.js"
   ]
 }
