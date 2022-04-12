@@ -1,43 +1,41 @@
 # Practica con Sitio de Juegos - Spika Games 🧩
 
 
-## Conceptos
-
-* Hooks
-** useEffect, useState, useRef
-** useHistory (Hook de router-dom)
-** useContext
-** Custom Hooks
-* Routes
-
+## Conceptos Generales
 * Fetch API
 * Firebase Database
-
-* Contexto
-** useContext
-** createContext
-
 * localStorage
+* Buenas Practicas en Estructura de directorios
+* Uso de IA - TabNine
 
+## Conceptos React
+### Conceptos Teoricos
+* Contexto - useContext y createContext
+* Routes
 * Componentes Wrappers(uso de propiedad especial children)
 * Componentes Reutilizables(Uso de props)
 * Componentes separados por funcionalidad
-* Estructura de directorios
 
+### Hooks
+- useEffect, useState, useRef
+* useHistory (Hook de router-dom)
+* useContext
+* Custom Hooks
 
-* Pendientes
+## Librerias Externas
+* font-Awesome
+Para iconos que se ven muy bien.
+
+* React-loading-io
+Para los Spinners.
+
+## Pendientes
 - [x] localStorage
 - [ ]  Botones para Secciones
 - [ ]  Secciones de cada cosa
 - [ ]  formato lindo para las secciones
 - [ ]  CSS en general 
 
-## Librerias
-* font-Awesome
-Para iconos que se ven muy bien.
-
-* React-loading-io
-Para los Spinners.
 
 ## Problemas Resueltos - General 🐛🦗🐞
 ### localStorage  

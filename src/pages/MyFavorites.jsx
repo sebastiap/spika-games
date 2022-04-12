@@ -3,15 +3,12 @@ import { useContext } from "react";
 import FavoritesContext from "../store/favorites-context";
 import Section from "../components/section";
 
-
-
-
 function MyFavorites() {
   const myFavs = useContext(FavoritesContext);
 
   let content ;
 
-  if (myFavs.total === 0) {
+  if (myFavs.total === 0) { 
     content = <div className="notfound">
     <h1>"Todavia no agregaste nada a Favoritos!"</h1>
     <p> Revisa nuestros articulos para ver cuales son tus preferidos!</p>
