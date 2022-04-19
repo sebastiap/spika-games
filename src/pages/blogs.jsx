@@ -65,7 +65,7 @@ useEffect(
   return (
 
     <div >
-      <Hero secciones={loadedBlogs} title="Ultimos Articulos" content="Lee los mas interesantes articulos:" background="background2"/>
+      <Hero secciones={loadedBlogs} tipo="blogs" title="Ultimos Articulos" content="Lee los mas interesantes articulos:" background="background2"/>
     </div>
   );
 }

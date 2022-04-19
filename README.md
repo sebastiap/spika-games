@@ -1,12 +1,13 @@
 # Practica con Sitio de Juegos - Spika Games 🧩
-
+Sitio online en Github Pages :
+https://sebastiap.github.io/spika-games/
 
 ## Conceptos Generales
 * Fetch API
 * Firebase Database
 * localStorage
 * Buenas Practicas en Estructura de directorios
-* Uso de IA - TabNine
+* Uso de IA - Tabnine
 
 ## Conceptos React
 ### Conceptos Teoricos
@@ -31,9 +32,9 @@ Para los Spinners.
 
 ## Pendientes
 - [x] localStorage
-- [ ]  Botones para Secciones
+- [X]  Botones para Secciones
 - [ ]  Secciones de cada cosa
-- [ ]  formato lindo para las secciones
+- [ ]  Formato lindo para las secciones
 - [ ]  CSS en general 
 
 

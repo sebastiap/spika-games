@@ -30,7 +30,8 @@ fContext.addFavorite({
       <img className={seccion.sectioncircleimg}src={props.img} alt={props.name} />
           <p>{props.content} ss</p>
           <button className={seccion.button} onClick={onClickHandler}> {itemIsFavorite?"Quitar de Favoritos":"Agregar a Favoritos"} </button>
-          <Link to={"/spika-games/"+ props.link}><button> Ver mas</button></Link>
+          {props.blog?<button className={seccion.button} onClick={onClickHandler}> Borrar Articulo </button>:<div></div>}
+          <Link to={"/spika-games/"+ props.link}><button style={{textDecoration:"none"}}> Ver mas</button></Link>
     </div>
   );
 }
