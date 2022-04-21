@@ -1,7 +1,7 @@
 * {
 
     box-sizing: border-box;
-    margin: 0;
+    /* margin: 0; */
   }
 
   a {
@@ -67,35 +67,23 @@
     background-image: url("https://s35691.pcdn.co/wp-content/uploads/2022/01/playing-cards-poker-cards-in-the-hand-of-a-young-man-picture-id1131822944.jpg");
   }
 
+/* Secciones */
 
-  /* .section {
-    background: #fff;
-    border-radius: 7px;
-    box-shadow: 0 2px 5px #ccc;
-    padding: 10px;
-    height: 30em;
-    width: 20em;
-    margin: 16px;
-    float: left;
-    text-align: center;
-  }
-  .section h1 {
-    font-size: 1.1em;
-    margin-bottom: 6px;
-  }
-  .section p {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
 
-  .section-circle-img {
-    /* border-radius: 90%; */
-    /* border: 7px solid #fff;
-    width: 70%;
-    height: 10em;
-  } */ 
+
+.imgcard {
+
+  width: 50%;
+  float: left;
+  margin: 2em;
+  margin: bottom 1em;
+  padding: 2em;
+}
+
+.imgcard img {
+  width:inherit;
+  border-radius: 25px 25px ;
+}
 
   .notfound {
     font-size: 1.8em;
