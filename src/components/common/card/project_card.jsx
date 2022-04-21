@@ -13,11 +13,8 @@ function Card(props) {
     <div className={classes.whitecard}>
       <div className={classes.top}>
         <h2 className="name">{props.name}</h2>
-        {/* <Avatar pic={props.pic} /> */}
       </div>
       <div className={classes.bottom}>
-        {/* <Detail info={props.tel} /> */}
-        {/* <Detail info={props.mail} /> */}
         <div className={classes.content} dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(tel)}}></div>
       </div>
     </div>

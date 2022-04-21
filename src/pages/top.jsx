@@ -4,8 +4,7 @@ import useFetch from "../components/common/useFetch";
 import { Ball } from "react-loading-io";
 
 function TopGames() {
-  const { error, isPending, data: data } = useFetch('https://api.boardgameatlas.com/api/search?limit=20&client_id=JLBr5npPhV')
-  // console.log(data.games)
+  const { error, isPending, data } = useFetch('https://api.boardgameatlas.com/api/search?limit=20&client_id=JLBr5npPhV')
   return (
 
     <div>
