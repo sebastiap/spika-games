@@ -9,7 +9,7 @@ function MyFavorites() {
   let content ;
 
   if (myFavs.total === 0) { 
-    content = <div className="notfound">
+    content = <div className="notfound" style={{margin: 0}}>
     <h1>"Todavia no agregaste nada a Favoritos!"</h1>
     <p> Revisa nuestros articulos para ver cuales son tus preferidos!</p>
     </div>

@@ -34,6 +34,7 @@ Para los Spinners.
 - [x] localStorage
 - [X]  Botones para Secciones
 - [ ]  Secciones de cada cosa
+- [ ]  Formato lindo Favoritos
 - [ ]  Formato lindo para las secciones
 - [ ]  CSS en general 
 
