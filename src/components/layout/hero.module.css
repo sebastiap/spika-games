@@ -20,6 +20,8 @@
 }
 .background2{
   background-image: url("https://cdn.thewirecutter.com/wp-content/media/2021/07/boardgames-2048px-2233.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -34,6 +36,7 @@
   height: 30em;
   /* Imagen de Fondo  */
   background-image: url("https://s35691.pcdn.co/wp-content/uploads/2022/01/playing-cards-poker-cards-in-the-hand-of-a-young-man-picture-id1131822944.jpg");
+  background-repeat: no-repeat;
 }
 
 .herotitle {

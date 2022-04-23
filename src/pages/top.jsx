@@ -8,7 +8,7 @@ function TopGames() {
   return (
 
     <div>
-      { error && <div>{ error }</div> }
+      { error && <div className="notfound">{ error }</div> }
       { isPending && <div className="notfound"><Ball size={72} color="#81ecec"/> <strong>Trayendo Juegos</strong><Ball size={72} color="#81ecec"/></div> }
       { data && <CardList games={data.games} /> }
     </div>
