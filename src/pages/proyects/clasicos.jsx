@@ -4,11 +4,11 @@ import { Link } from "react-router-dom"
 const NotFound = () =>
 {
     return(
-        <div className="notfound">
-            <h1>Pagina no encontrada</h1>
-            <p> Esa pagina no puede encontrarse</p>
-            <img src="https://http.cat/404" alt="Hidden Cat"/>
-            <p> <Link to="/spika-games/">Volver al home </Link></p>
+        <div className="Classicpage">
+            <h1>Juegos Clasicos</h1>
+            <p> Los juegos de nuestra infancia, de nuestros abuelos, los juegos de siempre.</p>
+            {/* <img src="https://http.cat/404" alt="Hidden Cat"/> */}
+            {/* <p> <Link to="/spika-games/">Volver al home </Link></p> */}
         </div>
     );
 };
