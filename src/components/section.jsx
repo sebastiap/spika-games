@@ -31,7 +31,7 @@ fContext.addFavorite({
         <p>{props.name}</p>
       </h1>
       <img className={seccion.sectioncircleimg}src={props.img} alt={props.name} />
-          <p>{props.content} ss</p>
+          <p>{props.content} </p>
           <button className={seccion.button} onClick={onClickHandler}> {itemIsFavorite?"Quitar de Favoritos":"Agregar a Favoritos"} </button>
           {props.blog?<button className={seccion.button} onClick={onClickHandler}> Borrar Articulo </button>:<></>}
           {props.blog?

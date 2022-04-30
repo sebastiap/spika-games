@@ -45,3 +45,9 @@
     background-color: #a50e48;
     border-color: #a50e48;
   }
+
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

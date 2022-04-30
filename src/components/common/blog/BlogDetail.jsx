@@ -10,13 +10,13 @@ const BlogDetails = (props) => {
   console.log(data)
 
   return (
-    
-    <Card className={classes.container}>
-      <h2>Blog details - { id }</h2>
-      <h2>Titulo- { data.state.title  }</h2>
-      <img srcSet={ data.state.img }/>
-      <h2>Contenido- { data.state.content }</h2>
+    <div className={classes.container}>
+    <Card >
+      <h2> { data.state.title  }</h2>
+      <img height="300"  srcSet={ data.state.img }/>
+      <p>{ data.state.content }</p>
     </Card>
+    </div>
   );
 }
  
