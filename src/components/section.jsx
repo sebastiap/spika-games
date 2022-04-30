@@ -4,6 +4,7 @@ import seccion from './section.module.css';
 import FavoritesContext from "../store/favorites-context";
 import { Link } from "react-router-dom";
 
+
 function Section(props) {
   const fContext = useContext(FavoritesContext);
   const itemIsFavorite = fContext.isFavorite(props.id);
@@ -17,6 +18,8 @@ fContext.addFavorite({
   name:props.name,
   img:props.img,
   content:props.content,
+  blog:props.blog,
+  link:props.link
 })
   }
   console.log(fContext)
@@ -30,8 +33,10 @@ fContext.addFavorite({
       <img className={seccion.sectioncircleimg}src={props.img} alt={props.name} />
           <p>{props.content} ss</p>
           <button className={seccion.button} onClick={onClickHandler}> {itemIsFavorite?"Quitar de Favoritos":"Agregar a Favoritos"} </button>
-          {props.blog?<button className={seccion.button} onClick={onClickHandler}> Borrar Articulo </button>:<div></div>}
-          <Link to={"/spika-games/"+ props.link}><button style={{textDecoration:"none"}}> Ver mas</button></Link>
+          {props.blog?<button className={seccion.button} onClick={onClickHandler}> Borrar Articulo </button>:<></>}
+          {props.blog?
+          <Link to={{pathname:"/spika-games/"+ props.link,state:{title:props.name,img:props.img,content:props.content}}}  ><button style={{textDecoration:"none"}}> Ver mas</button></Link>
+          :<Link to={"/spika-games/"+ props.link} title="pruebatitulo"><button style={{textDecoration:"none"}}> Ver mas</button></Link>}
     </div>
   );
 }

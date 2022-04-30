@@ -8,6 +8,7 @@ function MyFavorites() {
 
   let title ="" ;
   let content ;
+  console.log(myFavs)
 
   if (myFavs.total === 0) { 
     content = <div className="notfound">
@@ -24,7 +25,7 @@ function MyFavorites() {
     <p> Revisa nuestros articulos para agregar mas!</p>
     </div>
     </div>
-    content = myFavs.favorites.map(seccion => (<div className="cardfav" ><Section id={seccion.id} key={seccion.id} name={seccion.name} img={seccion.img}  content={seccion.content}/> </div>))
+    content = myFavs.favorites.map(seccion => (<div className="cardfav" ><Section id={seccion.id} key={seccion.id} name={seccion.name} img={seccion.img}  content={seccion.content} link={seccion.link} blog={seccion.blog}/> </div>))
   }
 
 
