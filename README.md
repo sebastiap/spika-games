@@ -33,10 +33,16 @@ Para los Spinners.
 ## Pendientes
 - [x] localStorage
 - [X]  Botones para Secciones
-- [ ]  Secciones de cada cosa
-- [ ]  Formato lindo Favoritos
+- [X]  Secciones de cada cosa
+- [X]  Formato lindo Favoritos
 - [ ]  Formato lindo para las secciones
+- [x] Retoques Finales Pagina Favoritos
 - [ ]  CSS en general 
+
+## Opcionales
+- [ ] Storage en una BD
+- [ ] Backend en Node/Python
+- [ ] Herramienta para desarrollo de juegos?
 
 
 ## Problemas Resueltos - General 🐛🦗🐞

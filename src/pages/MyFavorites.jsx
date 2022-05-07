@@ -11,7 +11,7 @@ function MyFavorites() {
   console.log(myFavs)
 
   if (myFavs.total === 0) { 
-    content = <div className="notfound">
+    content = <div className="notfound notfoundextra">
     <div>
     <h1>"Todavia no agregaste nada a Favoritos!"</h1>
     <p> Revisa nuestros articulos para ver cuales son tus preferidos!</p>
@@ -19,7 +19,7 @@ function MyFavorites() {
     </div>
   }
   else {
-    title = <div className="notfound" >
+    title = <div className="notfound notfoundextra" >
     <div>
     <h1>Estos son tus articulos favoritos</h1>
     <p> Revisa nuestros articulos para agregar mas!</p>

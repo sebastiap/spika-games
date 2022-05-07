@@ -50,7 +50,7 @@ const titleDescRef = useRef();
           <textarea id='description' required rows='5' ref={titleDescRef}></textarea>
         </div>
         <div className={classes.actions}>
-          <button>Agregar Articulo</button>
+          <button className={classes.control}>Agregar Articulo</button>
         </div>
       </form>
     </Card>
