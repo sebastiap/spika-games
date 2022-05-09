@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 function Section(props) {
   const fContext = useContext(FavoritesContext);
   const itemIsFavorite = fContext.isFavorite(props.id);
+
   function onClickHandler() {
   if (itemIsFavorite) {
     fContext.removeFavorite(props.id)
@@ -21,8 +22,16 @@ fContext.addFavorite({
   blog:props.blog,
   link:props.link
 })
-  }
-  console.log(fContext)
+  }}
+
+  const deleteBlog = () => {
+    // averiguar como Borrar de firebaseio
+    // fetch("https://spika-games-default-rtdb.firebaseio.com/blogs/"+ "-N-5b4AhxfBpIrFZpHes",
+    // {method:"DELETE",
+    // headers:{
+    //   "Content-Type": "application/json",
+    // } 
+    // })
   }
 
   return (
@@ -33,7 +42,7 @@ fContext.addFavorite({
       <img className={seccion.sectioncircleimg}src={props.img} alt={props.name} />
           <p>{props.content} </p>
           <button className={seccion.button} onClick={onClickHandler}> {itemIsFavorite?"Quitar de Favoritos":"Agregar a Favoritos"} </button>
-          {props.blog?<button className={seccion.button} onClick={onClickHandler}> Borrar Articulo </button>:<></>}
+          {props.blog?<button className={seccion.button} onClick={deleteBlog}> Borrar Articulo </button>:<></>}
           {props.blog?
           <Link to={{pathname:"/spika-games/"+ props.link,state:{title:props.name,img:props.img,content:props.content}}}  ><button style={{textDecoration:"none"}}> Ver mas</button></Link>
           :<Link to={"/spika-games/"+ props.link} title="pruebatitulo"><button style={{textDecoration:"none"}}> Ver mas</button></Link>}

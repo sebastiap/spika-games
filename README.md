@@ -36,6 +36,7 @@ Para los Spinners.
 - [X]  Secciones de cada cosa
 - [X]  Formato lindo Favoritos
 - [ ]  Formato lindo para las secciones
+- [ ]  Averiguar como Borrar de firebaseio
 - [x] Retoques Finales Pagina Favoritos
 - [ ]  CSS en general 
 
