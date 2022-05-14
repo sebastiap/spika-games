@@ -1,4 +1,6 @@
 # Practica con Sitio de Juegos - Spika Games 🧩
+Este sitio emula un blog de juegos de Mesa que comparte proyectos propios y manuales. De momento solo mostrara un top de juegos y articulos de ejemplo.
+
 Sitio online en Github Pages :
 https://sebastiap.github.io/spika-games/
 
@@ -12,7 +14,7 @@ https://sebastiap.github.io/spika-games/
 ## Conceptos React
 ### Conceptos Teoricos
 * Contexto - useContext y createContext
-* Routes
+* Routes (V5, utiliza Switch)
 * Componentes Wrappers(uso de propiedad especial children)
 * Componentes Reutilizables(Uso de props)
 * Componentes separados por funcionalidad
