@@ -44,8 +44,7 @@ Para los Spinners.
 
 ## Opcionales
 - [ ] Storage en una BD
-- [ ] Backend en Node/Python
-- [ ] Herramienta para desarrollo de juegos?
+- [ ] Backend en Node
 
 
 ## Problemas Resueltos - General 🐛🦗🐞
